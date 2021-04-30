@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  servers;
+  // initializing the array to avoid undefined error
+  servers = [];
 
   onAddServer() {
     this.servers.push('Another Server');
